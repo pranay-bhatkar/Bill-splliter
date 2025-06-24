@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💸 SmartSplit – Bill Tracker & Expense Splitter
 
-## Getting Started
+SmartSplit is a real-world problem-solving web application designed to simplify expense tracking and bill splitting among roommates, friends, or any shared-living group. Say goodbye to manual tracking and awkward payment reminders—SmartSplit makes shared finance management transparent, fair, and easy to manage.
 
-First, run the development server:
+> “No more awkward money talks or forgotten dues — just smart, simple splitting.”
 
+---
+
+## 🌟 Features
+
+- 🔄 **Split bills among group members**
+- 💰 **Track total paid, owed, and pending**
+- 📊 **Transaction history with monthly filters**
+- 🧾 **Add, edit, delete shared expenses**
+- 🔔 **Send reminders for dues**
+- 👥 **Group and member management**
+- 📱 **Mobile-first responsive UI**
+- 🔒 **Data privacy-first (no third-party access)**
+
+---
+
+## 📸 UI Preview
+
+> Figma-based design system with 6 responsive screens
+
+![SmartSplit UI](./assets/smartsplit-preview.png)
+
+---
+
+## 🧠 Use Case
+
+**Scenario: Shared Flat**
+
+Pranay, Riya, and Akash live together in a rented apartment:
+- Pranay pays ₹1000 for groceries
+- Riya pays ₹600 for internet
+- Each adds the expense to SmartSplit
+- The app auto-splits and calculates:
+  - Who owes whom
+  - Transaction summary
+  - Clear settlement steps
+
+---
+
+## 🔧 Tech Stack
+
+| Layer        | Technology             |
+|--------------|------------------------|
+| Frontend     | React.js, Tailwind CSS |
+| State Mgmt   | Context API / Zustand  |
+| UI Design    | Figma + Lucide Icons   |
+| Data Storage | Firebase / Supabase    |
+| Animations   | Framer Motion (planned)|
+| Deployment   | Vercel / Netlify       |
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+- Node.js ≥ 18.x
+- npm or yarn
+
+### 📥 Clone the Repository
 ```bash
+git clone https://github.com/pranay-bhatkar/Bill-splliter
+cd Bill-splliter
+
+npm install
+# or
+yarn install
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+SmartSplit/
+│
+├── public/                  # Static assets
+├── src/
+│   ├── components/          # Reusable UI components
+│   ├── pages/               # Pages (React Router / Next.js)
+│   ├── assets/              # Icons, illustrations
+│   ├── context/             # Global state (users, transactions)
+│   ├── utils/               # Helper functions
+│   └── styles/              # Tailwind and global styles
+│
+├── .env                     # Environment variables
+├── README.md
+└── package.json
+
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🛣 Roadmap
+ Add expenses with custom split
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ Transaction history and filtering
 
-## Learn More
+ Reminders and settlement tracking
 
-To learn more about Next.js, take a look at the following resources:
+ Export monthly PDF reports
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ PWA support (offline usage)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ QR-based “Settle with UPI” option
 
-## Deploy on Vercel
+ AI Insights (e.g., monthly spend trends)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 🎯 Why This Project?
+Millions of people live in shared spaces—hostels, PGs, apartments—but most still track shared expenses manually or on WhatsApp. SmartSplit is a modern, privacy-first solution tailored to these real, everyday needs.
+
+
+🛡 License
+This project is licensed under the MIT License.
+
+
+🤝 Contribution Guidelines
+Fork this repo
+
+Create a new branch: feature/your-feature
+
+Make your changes and commit
+
+Push and submit a pull request
+
+All contributions, suggestions, and fixes are welcome!
+
+📬 Contact
+Author: Pranay Bhatkar
+Email: pranaybhatkar81@gmail.com
+
+
+---
+
+### ✅ What's Included:
+- Responsive design documentation
+- All sections a real-world GitHub repo needs
+- Deployment-ready structure
+
+Would you like me to also generate:
+- A `LICENSE` file (MIT)?
+- A `.gitignore` file?
+- Live deployment on Vercel or Netlify (step-by-step)?
+Let me know and I’ll prepare it!
